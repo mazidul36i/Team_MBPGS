@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Singup Page
+        </title>
+        <style>
+            h3{
+                padding:20px
+            }
+            div{
+                width:40%;
+                margin:auto;
+                margin-top:200px;
+                text-align: center;
+                /* border: 1px solid; */
+                padding:20px;
+                background-color: rgb(13, 201, 173)
+            }
+            input{
+                width:80%;
+                margin:15px;
+                height: 40px;
+            
+            }
+            form{
+            
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                width:80%;
+                margin:15px;
+                height: 40px;
+                text-align: center;
+                border:0;
+                background-color: rgb(17, 138, 141);
+            }
+
+        </style>
+    </head>
+    <body>
+        <p id="display"></p>
+     <div>
+        <h3>- Visitor -</h3>
+        <form>
+            <input id="name" type="text" placeholder="Full name"><br>
+            <input id="email" type="email" placeholder="Email"><br>
+            <input id="org" type="text" placeholder="Organization"><br>
+            <button onClick="singUp()">SIGN UP</button><br>
+            <button onClick="returnPage()">RETURN</button><br>
+           
+        </form>
+       
+     </div>
+    </body>
+</html>
+<script>
+    function singUp(){
+      let userName=document.getElementById("name").value;
+      let userEmail=document.getElementById("email").value;
+      let userOrg=document.getElementById("org").value;
+      alert("sing Up successfully");
+    }
+    function returnPage(){
+        let userName=document.getElementById("name").value="";
+      let userEmail=document.getElementById("email").value="";
+      let userOrg=document.getElementById("org").value="";
+    }
+</script>
