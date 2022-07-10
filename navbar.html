@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body div {
 
-body div{
+            display: flex;
+            justify-content: space-between;
+            font-style: normal;
+            font-size: 13px;
+        }
 
-    display: flex;
-    justify-content: space-between;
-font-style: normal;
-font-size: 13px;
-}body>div{
-width: 100%;
-height: 46px;
-border: 1px solid;
-border-radius: 9px;
-align-items: center;
-background-color: rgb(17, 17, 47);
-color: white;
-}
-body>div>div{
-    gap:10px;
-    padding-right: 10px;
-}
-body>div>nav{
-    padding-left: 10px;
-}
+        body>div {
+            width: 100%;
+            height: auto;
+            border-radius: 9px;
+            align-items: center;
+            background-color: rgb(17, 17, 47);
+            color: white;
+        }
+
+        body>div>div>nav {
+            margin: 20px 38px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body>div>nav {
+            padding: 20px;
+        }
     </style>
 </head>
+
 <body>
     <div>
         <nav>
             Reebok
         </nav>
         <div>
-        <nav>
-            Men
-        </nav>
-        <nav>
-         women
-        </nav>
-        <nav>
-            Login
-        </nav>
-        <nav>
-            signup
-        </nav>
+            <nav>
+                <a href="mens.html">Men</a>
+            </nav>
+            <nav>
+                <a href="#">Women</a>
+            </nav>
+            <nav>
+                <a href="login.html">Login</a>
+            </nav>
+            <nav>
+                <a href="singup.html">Signup</a>
+            </nav>
         </div>
     </div>
 </body>
+
 </html>
